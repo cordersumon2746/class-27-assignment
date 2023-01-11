@@ -1,0 +1,356 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.clear-fixed::after{
+   content: "";
+   display: block;
+   clear: both;
+}
+
+.contain{
+    max-width: 1200px;
+    margin: auto;
+}
+/* header-section */
+.header-inner{
+    background: #0abc9a;
+}
+.header-logo{
+    float: left;
+    padding: 0px 10px;
+   padding-top: 10px;
+   color: #fff;
+}
+.header-logo h2{
+
+}
+.header-logo span{
+
+}
+.header-menu{
+    float: right;
+}
+.header-menu ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 30px;
+}
+.header-menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+/* banner-part */
+
+.banner{
+    width: auto;
+    height: 562px;
+    background-image: url(https://i.ibb.co/7p9BdW9/header-bg01.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-top: -8px;
+    position: relative;
+    z-index: -1;
+}
+
+.banner-content{
+    position: absolute;
+    left: 422px;
+    top: 270px;
+    color: white;
+    text-align: center;
+    
+}
+
+.banner-content h1{
+    font-weight: 901;
+    font-style: italic;
+    font-family: serif;
+}
+
+.btn1{
+    width: 152px;
+    height: 50px;
+    background: #0bbf9a;
+    border: 2px solid white;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 445px;
+    left: 605px;
+}
+.btn1:hover a{
+    color: black;
+    font-family: arial black;
+}
+
+.btn1::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: yellow;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    transition: .8s;
+    z-index: -1;
+    
+}
+.btn1::after{
+    content: "";
+    width: 50%;
+    height: 0%;
+    background: yellow;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    visibility: hidden;
+    transition: .8s;
+    z-index: -1;
+    
+}
+.btn1:hover::before{
+    visibility: visible;
+   width: 50%;
+  
+
+   
+}
+.btn1:hover::after{
+    visibility: visible;
+   height: 100%;
+  
+
+   
+}
+
+.btn1 a{
+    text-decoration: none;
+    line-height: 50px;
+    color: white;
+}
+
+/* service-part */
+
+.service-part{
+    width: 100%;
+    margin-bottom: 120px;
+    margin-bottom: 2px solid #0bbf9a;
+}
+
+.our-service{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.our-service h2{
+    font-family: serif;
+}
+
+.digital{
+    width: 200px;
+    text-align: center;
+    margin-top: 100px;
+    float: left;
+    margin-left: 80px;
+    
+}
+.web{
+    width: 200px;
+    text-align: center;
+    margin-top: 100px;
+    float: left;
+    margin-left: 80px
+}
+.graphic{
+    width: 200px;
+    text-align: center;
+    margin-top: 100px;
+    float: left;
+    margin-left: 80px
+}
+
+.app{
+    width: 200px;
+    text-align: center;
+    margin-top: 100px;
+    float: left;
+    margin-left: 80px
+}
+.web h3,.graphic h3,.app h3,.digital h3{
+    font-size: 20px;
+   font-weight: 501;
+}
+
+.web i,.graphic i,.app i,.digital i{
+    font-size: 60px;
+    color: #0dbf9b;
+    margin-bottom: 25px;
+}
+
+.app{
+    width: 207px;
+}
+
+/* about-us */
+
+.about-us{
+    width: 100%;
+    border-top: 2px solid #0bbf9a;
+}
+
+.about{
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 501;
+}
+
+.about h2{
+    font-weight: 501;
+    font-family: serif;
+}
+
+.about-pic{
+    width:40%;
+    margin-top: 75px ;
+    margin-left: 40px;
+    float: left;
+    height: 415px;
+    background-image: url(https://i.ibb.co/JHBXY7c/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.we-do{
+    
+    width: 38%;
+    float: left;
+    margin-top: 24px;
+    margin-left: 70px;
+}
+
+.we-do2{
+    
+    width: 38%;
+    float: left;
+    margin-top: 24px;
+    margin-left: 70px;
+}
+.we-do2 h3{
+    font-size: 20px;
+}
+
+
+.we-are{
+    
+    width: 38%;
+    float: left;
+    margin-top: 26px;
+    margin-left: 70px;
+}
+.we-are h3,.we-do h3{
+    font-size: 20px;
+}
+.boss{
+    margin-top: 62px;
+}
+
+/* contact-part */
+
+.contact{
+    width: 100%;
+    background: #f6f6f6;
+    margin-top: 100px;
+   
+}
+
+.contact-us{
+    text-align: center;
+   
+}
+
+.contact-us h2{
+    margin-top: 70px;
+    display: inline-block;
+    font-family: serif;
+    font-weight: 501;
+}
+
+.sector,.info,.number{
+    text-align: center;
+    width: 171px;
+    margin-left: 250px;
+    margin-top: 70px;
+    float: left;
+    margin-bottom: 100px;
+    transition: .8s;
+}
+.sector:hover{
+   transform: scale(1.3);
+}
+.info:hover{
+   transform: scale(1.3);
+}
+.number:hover{
+   transform: scale(1.4);
+}
+
+.sector i,.info i,.number i{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:#0bbf9a ;
+}
+
+.info{
+    margin-left: 144px;
+}
+
+.number{
+    margin-left: 144px;
+}
+
+/* social-menu */
+
+.social-menu{
+    background:#0bbf9a ;
+    text-align: center;
+}
+
+.social-menu ul li{
+    display: inline-block;
+    padding: 20px 10px;
+    transition: .8s;
+}
+
+.social-menu ul li:hover{
+    transform: scale(2.4);
+    color: yellowgreen;
+}
+.social-menu ul li:hover i{
+   
+    color: yellow;
+}
+.social-menu i{
+    font-size: 20px;
+    color: white;
+}
+
+.social-menu ul li a{
+    color: white;
+    
+   
+}
+
+/* footer */
+.footer-content h5{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0px;
+    margin-top: -16px;
+}
